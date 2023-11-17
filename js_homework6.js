@@ -2,8 +2,8 @@
 
 function createObject() {
     let obj = {
-        name: 'Fantasy Object',
-        color: 'Blue',
+        name: 'Frogcat',
+        color: 'Green',
         type: 'Mystical',
         getInfo: function() {
             for (let key in this) {
@@ -22,14 +22,16 @@ let obj = createObject();
 obj.getInfo(); // Виведе інформацію про об'єкт
 
 // Додавання нової властивості
-obj.feel = 'very nice!';
+obj.emotion = 'Very cute!';
 obj.getInfo(); // Тепер виведе всі властивості, включаючи нову
+
+console.log();
 
 // Домашнє завдання 2
 
 var services = {
-    "стрижка": "60 грн",
-    "гоління": "80 грн",
+    "Стрижка": "60 грн",
+    "Гоління": "80 грн",
     "Миття голови": "100 грн",
 
     price: function() {
@@ -73,11 +75,10 @@ var services = {
 };
 
 // Додавання нової послуги
-services['Розбити скло'] = "200 грн";
+services['Фарбування'] = "600 грн";
 
 // Виклик методів
 console.log(services.price());    // Загальна вартість послуг
 console.log(services.minPrice()); // Мінімальна вартість
 console.log(services.maxPrice()); // Максимальна вартість
 
-// Домашнє завдання 3
